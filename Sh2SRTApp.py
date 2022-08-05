@@ -7,6 +7,7 @@ import time
 from tkinter import ttk
 from tkinter import *
 from tkinter.ttk import *
+from os.path import dirname, join
 import sys
 import os
 
@@ -126,7 +127,7 @@ class sh2EnhancedSRT:
                     self.boatStageTime_pointer)
                 self.totalDamage = self.process.readFloat(self.totalDamage_pointer)
             except Exception as ex:
-                sys.exit("Not expected error, contact the developer team!!!")
+                sys.exit("Error getting values from memory, game closed")
 
             # VALUES TEXT SET
             self.actionDiff_VALUE['text'] = getActionLevelById(self.actionDiff)
@@ -271,6 +272,8 @@ def getRiddleLevelById(id) -> str:
 
 
 def main():
+    project_root = dirname(dirname(__file__))
+
     root = tk.Tk()
     w = 250
     h = 230
@@ -281,7 +284,7 @@ def main():
     root.geometry('%dx%d+%d+%d' % (w, h, x, y))
     root.resizable(width=False, height=False)
     root.title('Silent hill 2 SRT'),
-    root.iconbitmap(r'C:\Users\rodri\Desktop\SilentHill2Srt\icon.ico')
+    # root.iconbitmap(os.getcwd() + '\\icon.ico')
     # root.tk.call('wm', 'iconphoto', root._w, image)
     root.configure(background='#000')
     sh2EnhancedSRT(root)
