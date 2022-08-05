@@ -22,3 +22,8 @@ Clicking OK will terminate the app
 # Download
 
 The download of the .exe is available in the releases section of this page
+
+# Build your own EXE (only if you choose to clone the repository )
+```
+python -m PyInstaller --onefile -w -F --add-binary "icon.ico;." --noconsole --icon=E:\desenv\SilentHill2Srt\icon.ico Sh2SRTApp.py
+```
