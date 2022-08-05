@@ -18,3 +18,7 @@ If the game is not running an error will be displayed:
 ![alt text](https://github.com/rod-amorim/SilentHill2pcSRT/blob/main/Main_screen_error.PNG)
 
 Clicking OK will terminate the app
+
+# Download
+
+The download of the .exe is available in the releases section of this page
