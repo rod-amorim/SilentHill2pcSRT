@@ -10,7 +10,11 @@ https://docs.python.org/pt-br/3/library/tk.html
 
 # How to use
 To use it just run the game and then the SRT, you should see a small window with the values already being displayed:
+
 ![alt text](https://github.com/rod-amorim/SilentHill2pcSRT/blob/main/Main_screen.PNG)
+
 If the game is not running an error will be displayed:
+
+![alt text](https://github.com/rod-amorim/SilentHill2pcSRT/blob/main/Main_screen_error.PNG)
 
 Clicking OK will terminate the app
