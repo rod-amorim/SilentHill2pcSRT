@@ -25,5 +25,5 @@ The download of the .exe is available in the releases section of this page
 
 # Build your own EXE (only if you choose to clone the repository )
 ```
-python -m PyInstaller --onefile -w -F --add-binary "icon.ico;." --noconsole --icon=E:\desenv\SilentHill2Srt\icon.ico Sh2SRTApp.py
+python -m PyInstaller --onefile -w -F --add-binary "icon.ico;." --noconsole --icon="Full path to the .ico file inside the project folder ex:E:\desenv\SilentHill2Srt\icon.ico" Sh2SRTApp.py
 ```
