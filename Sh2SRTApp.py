@@ -284,7 +284,8 @@ def main():
     root.geometry('%dx%d+%d+%d' % (w, h, x, y))
     root.resizable(width=False, height=False)
     root.title('Silent hill 2 SRT'),
-    # root.iconbitmap(os.getcwd() + '\\icon.ico')
+    # root.iconbitmap('icon.ico')
+    root.wm_attributes('-toolwindow', 'True')
     # root.tk.call('wm', 'iconphoto', root._w, image)
     root.configure(background='#000')
     sh2EnhancedSRT(root)
